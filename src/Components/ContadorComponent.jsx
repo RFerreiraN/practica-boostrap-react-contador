@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import { useContador } from '../Hooks/useContador'
 
 export const ContadorComponent = () => {
