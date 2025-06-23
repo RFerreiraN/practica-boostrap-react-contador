@@ -1,21 +1,9 @@
 import { useState } from 'react'
+import { useContador } from '../Hooks/useContador'
 
 export const ContadorComponent = () => {
 
-  const [valor, setValor] = useState(0)
-
-  const incrementar = () => {
-    setValor( valor + 1 )
-  }
-
-  const decrementar = () => {
-    if ( valor < 1 ) return
-    setValor( valor - 1 )
-  }
-
-  const resetear = () => {
-    setValor(0)
-  }
+  const { incrementar, resetear, decrementar, valor } = useContador()
 
   return (
     <>
